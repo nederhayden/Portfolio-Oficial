@@ -1,1 +1,24 @@
 @import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text;
+  border-bottom: 1px solid $bgLight;
+}
+
+// HEADER_ITEM
+.header_item {
+  font-size: 1.8rem;
+  margin: 0.6rem 0 0.6rem 0;
+
+  &:hover {
+    color: $primary;
+    transition: 0.8s;
+  }
+
+  a {
+    padding: 0 0.8rem;
+  }
+}

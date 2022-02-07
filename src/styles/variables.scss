@@ -1,11 +1,18 @@
-$background-color: #11172b;
-$backgroundLight: "#1B2138";
-$primary: "#0EE7B7";
-$secondary: "#7AC7E3";
-$gradient: "linear-gradient(225deg, #313860 0%, #11172B 100%);";
-$text: "#848DA0";
-$txtHighlight: "#444B5B";
-$txtLight: "#C4C4C4";
-$border: "#313958";
-$inputBackground: "#1E253E";
-$error: "#d45d5d";
+// backgrounds
+$bg-color: #11172b;
+$bgLight: #1b2138;
+
+// main colors
+$primary: #0ee7b7;
+$secondary: #7ac7e3;
+
+// texts
+$text: #848da0;
+$txtHighlight: #444b5b;
+$txtLight: #c4c4c4;
+
+// generics
+$border: #313958;
+$inputBackground: #1e253e;
+$gradient: linear-gradient(225deg, #313860 0%, #11172b 100%);
+$error: #d45d5d;
