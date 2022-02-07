@@ -1,1 +1,42 @@
 @import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid $bgLight;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: $text;
+  padding: 0.6rem 1.8rem;
+
+  button {
+    background: none;
+    border: none;
+    color: $text;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+      transition: 0.8s;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  svg {
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+      transition: 0.8s;
+    }
+  }
+}

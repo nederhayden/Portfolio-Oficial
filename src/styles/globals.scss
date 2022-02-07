@@ -1,17 +1,17 @@
 @import "./variables.scss";
 
-html,
-body {
+* {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
   background-color: $bg-color;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
