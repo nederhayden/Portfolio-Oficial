@@ -1,6 +1,5 @@
 // next
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 // styles
 import styles from "./styles.module.scss";
@@ -12,11 +11,9 @@ interface IHeaderItemProps {
 }
 
 export default function HeaderItem({ title, link }: IHeaderItemProps) {
-  const router = useRouter();
-
   return (
     <div className={styles.header_item}>
-      <Link href={link} passHref>
+      <Link href={link}>
         <a>{title}</a>
       </Link>
     </div>

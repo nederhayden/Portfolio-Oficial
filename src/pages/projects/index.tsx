@@ -1,10 +1,10 @@
 // styles
 import styles from "./styles.module.scss";
 
-export default function Main() {
+export default function Projects() {
   return (
     <div className={styles.container}>
-      <h1>Início</h1>
+      <h1>Projects</h1>
     </div>
   );
 }
