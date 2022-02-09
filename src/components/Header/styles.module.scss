@@ -3,22 +3,19 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: $text;
-  border-bottom: 1px solid $bgLight;
+  justify-content: space-around;
+  color: $light-primary-color-text;
+  // border-bottom: 1px solid $light-primary-color-generic;
 }
 
 // HEADER_ITEM
-.header_item {
-  margin: 0.6rem 0 0.6rem 0;
-
-  &:hover {
-    color: $primary;
-    transition: 0.8s;
-  }
+.header_links {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
 
   a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0 0.8rem;
   }
 }

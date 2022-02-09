@@ -1,18 +1,116 @@
-// backgrounds
-$bg-color: #11172b;
-$bgLight: #1b2138;
+// COLOR PALETTE
+// ==== LIGHT ====| ==== DARK ====
+// 01 - #336664   | 01 - #304178
+// 02 - #BBEAE8   | 02 - #303545
+// 03 - #73E6E3   | 03 - #11172B
+// 04 - #526665   | 04 - #545C78
+// 05 - #59B3B0   | 05 - #4F6AC4
 
-// main colors
-$primary: #0ee7b7;
-$secondary: #7ac7e3;
-
+// =================== DARK MODE ===================
+$dark-theme: "dark-theme";
+// background
+$dark-primary-color-bg: #11172b;
+$dark-secondary-color-bg: #303545;
 // texts
-$text: #848da0;
-$txtHighlight: #444b5b;
-$txtLight: #c4c4c4;
+$light-primary-color-text: #304178;
+// others
+$light-primary-color-generic: #4f6ac4;
+// ==================================================
 
-// generics
-$border: #313958;
-$inputBackground: #1e253e;
-$gradient: linear-gradient(225deg, #313860 0%, #11172b 100%);
-$error: #d45d5d;
+// =================== LIGHT MODE ===================
+$light-theme: "light-theme";
+// background
+$light-primary-color-bg: #73e6e3;
+$light-secondary-color-bg: #bbeae8;
+// texts
+$light-primary-color-text: #336664;
+// others
+$light-primary-color-generic: #59b3b0;
+// ==================================================
+
+// gradient
+$light-gradient: linear-gradient(
+  $light-primary-color-bg 10%,
+  $light-secondary-color-bg,
+  $light-primary-color-bg 90%
+);
+$dark-gradient: linear-gradient(
+  $dark-primary-color-bg 10%,
+  $dark-secondary-color-bg,
+  $dark-primary-color-bg 90%
+);
+
+// THEMES
+$themes: (
+  $light-theme: (
+    $light-primary-color-bg: #73e6e3,
+    $light-secondary-color-bg: #bbeae8,
+    $light-gradient:
+      linear-gradient(
+        $light-primary-color-bg 10%,
+        $light-secondary-color-bg,
+        $light-primary-color-bg 90%
+      ),
+  ),
+  $dark-theme: (
+    $dark-primary-color-bg: #11172b,
+    $dark-secondary-color-bg: #303545,
+    $dark-gradient:
+      linear-gradient(
+        $dark-primary-color-bg 10%,
+        $dark-secondary-color-bg,
+        $dark-primary-color-bg 90%
+      ),
+  ),
+);
+
+// ==================================================
+@mixin themeProperty(
+  $theme,
+  $property,
+  $color,
+  $additionalPropertiesPositionIsFront,
+  $additionalProperties
+) {
+  @if $additionalPropertiesPositionIsFront {
+    #{$property}: unquote(
+      $additionalProperties + " " + map-get($theme, $color)
+    );
+  } @else {
+    #{$property}: unquote(
+      map-get($theme, $color) + " " + $additionalProperties
+    );
+  }
+}
+
+@mixin theme(
+  $property,
+  $color,
+  $additionalPropertiesPositionIsFront: false,
+  $additionalProperties: ""
+) {
+  $light: map-get($themes, $light-theme);
+  $dark: map-get($themes, $dark-theme);
+
+  @include themeProperty(
+    $light,
+    $property,
+    $color,
+    $additionalPropertiesPositionIsFront,
+    $additionalProperties
+  );
+
+  @media (prefers-color-scheme: dark) {
+    @include themeProperty(
+      $dark,
+      $property,
+      $color,
+      $additionalPropertiesPositionIsFront,
+      $additionalProperties
+    );
+  }
+}
+// ==================================================
+
+// FONTE:
+// https://www.fabrizioduroni.it/2020/05/20/dark-mode-css-sass-scss/
