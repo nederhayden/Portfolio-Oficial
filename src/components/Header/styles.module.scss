@@ -1,11 +1,11 @@
-@import "../../styles/variables.scss";
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: $light-primary-color-text;
-  // border-bottom: 1px solid $light-primary-color-generic;
+
+  a {
+    color: var(--color-primary-text);
+  }
 }
 
 // HEADER_ITEM
@@ -15,6 +15,7 @@
   margin: 1.2rem 0;
 
   a {
+    color: var(--color-primary-text);
     font-size: 1rem;
     padding: 0 0.8rem;
   }

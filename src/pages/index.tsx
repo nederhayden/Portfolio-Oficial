@@ -1,18 +1,16 @@
 // next
 import type { NextPage } from "next";
+import Header from "../components/Header";
+import ThemeMode from "../components/ThemeMode";
 
 // components
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Footer from "../components/Footer";
 
 // styles
-import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Main />
+    <div>
+      <Header />
     </div>
   );
 };
