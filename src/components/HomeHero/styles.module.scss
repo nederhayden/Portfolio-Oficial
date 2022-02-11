@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+
+  .img_container {
+    width: 45rem;
+    margin-right: 1.6rem;
+  }
+
+  .info_container {
+    margin-top: 6rem;
+
+    h1 {
+      font-size: 8rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.container_code_item {
+  margin: 2rem 0;
+
+  .comment {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  .code_item {
+    background: var(--color-background-gradient);
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1.4rem;
+      line-height: 1.6rem;
+    }
+  }
+}
