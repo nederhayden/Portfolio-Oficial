@@ -1,5 +1,10 @@
 // next
-import Link from "next/link";
+// import Link from "next/link";
+
+// components
+import { Anchor } from "antd";
+
+const { Link } = Anchor;
 
 // styles
 import styles from "./styles.module.scss";
@@ -13,9 +18,9 @@ interface IHeaderItemProps {
 export default function HeaderItem({ title, link }: IHeaderItemProps) {
   return (
     <div className={styles.header_item}>
-      <Link href={link}>
-        <a>{title}</a>
-      </Link>
+      <Anchor affix={false}>
+        <Link href={link} title={title} />
+      </Anchor>
     </div>
   );
 }

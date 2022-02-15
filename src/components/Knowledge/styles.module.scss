@@ -1,0 +1,30 @@
+.container {
+  margin: 6rem 0;
+
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+}
+
+.container_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+
+  p {
+    color: var(--color-secondary-text);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    // text-shadow: 0 0 1rem #ccc;
+  }
+
+  svg {
+    font-size: 6rem;
+    // filter: drop-shadow(0 0 1rem #2e2e2e);
+  }
+}

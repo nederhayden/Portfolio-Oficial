@@ -1,4 +1,5 @@
 // components
+import Link from "next/link";
 import ThemeMode from "../ThemeMode";
 import HeaderItem from "./HeaderItem";
 
@@ -8,27 +9,24 @@ import styles from "./styles.module.scss";
 export default function Header() {
   const urls = [
     {
-      title: "Início",
-      link: "/",
+      title: "Sobre",
+      link: "#homehero",
     },
-
     {
       title: "Experiências",
-      link: "/experiences",
-    },
-    {
-      title: "Projetos",
-      link: "/projects",
+      link: "#knowledge",
     },
     {
       title: "Contato",
-      link: "/contact",
+      link: "#footer",
     },
   ];
 
   return (
     <div className={styles.container}>
-      <a>{"<nederhayden/>"}</a>
+      <Link href="/">
+        <a id="/">{"<nederhayden/>"}</a>
+      </Link>
       <ul className={styles.header_links}>
         {urls.map((url, index) => (
           <HeaderItem key={index} title={url.title} link={url.link} />

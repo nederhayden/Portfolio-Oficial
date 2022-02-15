@@ -1,22 +1,26 @@
 .container {
   display: flex;
-  justify-content: center;
   margin-top: 1.2rem;
+  gap: 4rem;
 
   .img_container {
-    width: 45rem;
     margin-right: 1.6rem;
+    flex: 1;
   }
 
   .info_container {
     margin-top: 6rem;
+    width: 100%;
+    flex: 1;
 
     h1 {
       font-size: 8rem;
+      color: var(--color-primary-text);
     }
 
     h3 {
       font-size: 2rem;
+      color: var(--color-secondary-text);
     }
   }
 }
@@ -27,19 +31,27 @@
   .comment {
     display: flex;
     margin-bottom: 1.2rem;
+    color: var(--color-secondary-text);
   }
 
   .code_item {
-    background: var(--color-background-gradient);
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
+
+    .title {
+      color: var(--color-accent-text);
+    }
 
     .details {
       display: flex;
       flex-direction: column;
       margin-left: 1.4rem;
       line-height: 1.6rem;
+
+      span {
+        color: var(--color-secondary-text);
+      }
     }
   }
 }
