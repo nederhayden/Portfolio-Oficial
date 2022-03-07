@@ -1,15 +1,15 @@
 // components
-import { Router } from "next/router";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+// import { Router } from "next/router";
+import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
 // styles
 import styles from "./styles.module.scss";
 
 export default function Footer() {
-  function handleRedirect(url: string) {
-    window.open(url);
-  }
+  const date = new Date();
+  const currentYear = date.getFullYear();
 
+  // funcao para mover o scroll para o topo
   function handleScrollTop() {
     // window.scrollTo({
     //   top: 0,
@@ -20,17 +20,10 @@ export default function Footer() {
 
   return (
     <div id="footer" className={styles.container}>
-      <section>
-        <SiLinkedin
-          onClick={() =>
-            handleRedirect("https://www.linkedin.com/in/neder-hayden/")
-          }
-        />
-        <SiGithub
-          onClick={() => handleRedirect("https://github.com/nederhayden")}
-        />
-      </section>
-      <button onClick={handleScrollTop}>Voltar ao início</button>
+      <span>Portfólio Oficial &copy; {currentYear} by Neder Hayden</span>
+      <button onClick={handleScrollTop}>
+        <BsFillArrowUpSquareFill />
+      </button>
     </div>
   );
 }

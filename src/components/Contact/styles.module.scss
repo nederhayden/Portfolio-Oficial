@@ -3,9 +3,8 @@
 
   section {
     display: grid;
-    grid-template-columns: repeat(4, minmax(14rem, auto));
+    grid-template-columns: repeat(3, minmax(20rem, auto));
     justify-content: center;
-    // gap: 4rem;
   }
 }
 

@@ -1,7 +1,14 @@
 .container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 12rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #1a2525;
+  z-index: 1;
 
   a {
     color: var(--color-secondary-text);

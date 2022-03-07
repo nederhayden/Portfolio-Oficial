@@ -3,13 +3,14 @@ import { useEffect } from "react";
 
 // next
 import type { NextPage } from "next";
-import Footer from "../components/Footer";
 
 // components
 import AOS from "aos";
 import Header from "../components/Header";
 import HomeHero from "../components/HomeHero";
 import Knowledge from "../components/Knowledge";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 // styles
 import "aos/dist/aos.css";
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <Header />
       <HomeHero />
       <Knowledge />
+      <Contact />
       <Footer />
     </div>
   );

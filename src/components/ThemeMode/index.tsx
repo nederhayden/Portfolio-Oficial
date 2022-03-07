@@ -1,9 +1,6 @@
 // react
 import { useEffect, useState } from "react";
 
-// components
-import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
-
 // styles
 import styles from "./styles.module.scss";
 

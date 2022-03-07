@@ -5,17 +5,17 @@ import { ReactNode } from "react";
 import styles from "./styles.module.scss";
 
 // interfaces
-interface KnowledgeItemProps {
+interface ContactItemProps {
   title: string;
   icon: ReactNode;
   onClick: React.MouseEventHandler<HTMLParagraphElement>;
 }
 
-export default function KnowledgeItem({
+export default function ContactItem({
   title,
   icon,
   onClick,
-}: KnowledgeItemProps) {
+}: ContactItemProps) {
   return (
     <div
       className={styles.container_item}

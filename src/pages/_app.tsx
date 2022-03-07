@@ -1,8 +1,6 @@
 // next
 import type { AppProps } from "next/app";
 
-// components
-
 // styles
 import "../styles/globals.scss";
 import styles from "../styles/home.module.scss";
