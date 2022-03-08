@@ -3,19 +3,20 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeMode from "../ThemeMode";
 import HeaderItem from "./HeaderItem";
+import { FiDownload } from "react-icons/fi";
 
 // styles
 import styles from "./styles.module.scss";
 
 export default function Header() {
-  const [test, setTest] = useState(false);
+  const [colorBgHeader, setColorBgHeader] = useState(false);
 
   function handleScroll() {
     const offset = window.scrollY;
     if (offset >= 73) {
-      setTest(true);
+      setColorBgHeader(true);
     } else {
-      setTest(false);
+      setColorBgHeader(false);
     }
   }
 
@@ -40,7 +41,7 @@ export default function Header() {
   ];
 
   return (
-    <div className={test ? styles.container_active : styles.container}>
+    <div className={colorBgHeader ? styles.container_active : styles.container}>
       <Link href="/">
         <a id="/">{"<nederhayden/>"}</a>
       </Link>
@@ -48,6 +49,15 @@ export default function Header() {
         {urls.map((url, index) => (
           <HeaderItem key={index} title={url.title} link={url.link} />
         ))}
+        <a
+          className={styles.pdf}
+          href="../../../public/curriculo.pdf"
+          target="_blank"
+          download
+        >
+          Baixar Currículo
+          <FiDownload />
+        </a>
         <ThemeMode />
       </ul>
     </div>

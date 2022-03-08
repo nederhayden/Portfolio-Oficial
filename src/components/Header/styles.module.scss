@@ -56,4 +56,15 @@
     font-size: 1rem;
     padding: 0 0.8rem;
   }
+
+  .pdf {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: var(--color-background-button);
+
+    svg {
+      margin-left: 0.4rem;
+    }
+  }
 }
