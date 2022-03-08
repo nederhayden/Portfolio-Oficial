@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 
 // styles
 import "aos/dist/aos.css";
+import styles from "../styles/home.module.scss";
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -21,13 +22,15 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <Header />
-      <HomeHero />
-      <Knowledge />
-      <Contact />
+      <main className={styles.main}>
+        <HomeHero />
+        <Knowledge />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
