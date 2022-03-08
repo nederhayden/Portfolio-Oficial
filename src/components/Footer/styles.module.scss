@@ -7,7 +7,7 @@
 
   span {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-secondary-text);
+    color: var(--color-primary-text);
   }
 
   button {
@@ -19,12 +19,12 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: var(--color-secondary-text);
+    color: var(--color-primary-button);
     margin-right: 0.8rem;
 
     &:hover {
       transition: 0.8s;
-      color: var(--color-accent-text);
+      color: var(--color-accent-button);
     }
   }
 }

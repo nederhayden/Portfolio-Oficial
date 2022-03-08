@@ -16,11 +16,11 @@
   cursor: pointer;
 
   &:hover {
-    filter: drop-shadow(0 0 1rem var(--color-accent-text));
+    filter: drop-shadow(0 0 0.25rem var(--color-accent-text));
   }
 
   p {
-    color: #988bc7;
+    color: var(--color-secondary-text);
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;

@@ -4,26 +4,18 @@
 
   // background
   --color-background: #eed7d4;
-
-  // gradient
-  --color-background-gradient: linear-gradient(350deg, #000 10%, #fff 100%);
 }
 
 [data-theme="dark"] {
   // primary
   --color-primary-text: #ff79c6;
-  --color-secondary-text: #ff79c6;
+  --color-secondary-text: #fff;
   --color-accent-text: #fff;
+  --color-primary-button: #ff79c6;
+  --color-accent-button: #f748ab;
 
   // background
   --color-background: #13111b;
-
-  // slider
-  --color-slider-button: #004f4e;
-  --color-slider-background: #08a677;
-
-  // gradient
-  --color-background-gradient: linear-gradient(350deg, #000 10%, #fff 100%);
 }
 
 * {

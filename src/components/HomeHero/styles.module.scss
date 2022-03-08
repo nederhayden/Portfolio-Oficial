@@ -16,7 +16,7 @@
     h1 {
       font-size: 8rem;
       color: var(--color-primary-text);
-      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-accent-text));
+      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-secondary-text));
     }
 
     h3 {
@@ -63,7 +63,7 @@
       line-height: 1.6rem;
 
       span {
-        color: var(--color-accent-text);
+        color: var(--color-secondary-text);
 
         .two_points {
           color: #ff79c6;
