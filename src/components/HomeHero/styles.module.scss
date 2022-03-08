@@ -16,12 +16,12 @@
     h1 {
       font-size: 8rem;
       color: var(--color-primary-text);
-      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-secondary-text));
+      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-accent-text));
     }
 
     h3 {
       font-size: 1.4rem;
-      color: #cecfe9;
+      color: var(--color-secondary-text);
       font-family: "Montserrat", sans-serif;
       text-align: justify;
 
@@ -29,7 +29,7 @@
         text-transform: uppercase;
         font-family: "Roboto", sans-serif;
         font-size: 1.8rem;
-        color: #ff79c6;
+        color: var(--color-primary-text);
       }
     }
   }
@@ -63,7 +63,7 @@
       line-height: 1.6rem;
 
       span {
-        color: var(--color-secondary-text);
+        color: #fff;
 
         .two_points {
           color: #ff79c6;

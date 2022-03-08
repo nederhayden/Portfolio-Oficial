@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 // styles
-import styles from "./styles.module.scss";
+// import styles from "./styles.module.scss";
 
 export default function ThemeMode() {
   const [darkTheme, setDarkTheme] = useState<any>(undefined);
@@ -37,9 +37,9 @@ export default function ThemeMode() {
   return (
     <>
       {darkTheme !== undefined && (
-        <label className={styles.switch}>
+        <label className="switch">
           <input type="checkbox" checked={darkTheme} onChange={handleToggle} />
-          <span className={styles.slider}></span>
+          <span className="slider"></span>
         </label>
       )}
     </>

@@ -1,11 +1,50 @@
+// LIGHT THEME
 :root {
+  // analogo
+  // A - #F7E0D0
+  // B - #D6BDB4
+  // C - #EED7D4
+  // D - #D6B4B7
+  // E - #F7D0E7
+
+  // monocromatico
+  // A - #6E6362
+  // B - #F0998E
+  // C - #EED7D4
+  // D - #6E4641
+  // E - #BAA8A6
+
   // primary
-  --color-primary-text: #56545f;
+  --color-primary-text: #6e4641;
+  --color-secondary-text: #191622;
+  --color-accent-text: #f0998e;
+  --color-primary-button: #6e4641;
+  --color-accent-button: #775956;
 
   // background
   --color-background: #eed7d4;
-}
+  --color-background-header-footer: #d6bdb4;
 
+  // scrollbar
+  ::-webkit-scrollbar-thumb {
+    background-color: #6e4641;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #d6b4b7;
+  }
+
+  // switch mode
+  .slider {
+    background-color: #d6b4b7;
+
+    &:before {
+      background-color: #6e4641;
+    }
+  }
+}
+// =============================================================================
+// DARK THEME
 [data-theme="dark"] {
   // primary
   --color-primary-text: #ff79c6;
@@ -16,8 +55,33 @@
 
   // background
   --color-background: #13111b;
+  --color-background-header-footer: #191622;
+
+  // scrollbar
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff79c6;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #56545f;
+  }
+
+  // switch mode
+  .slider {
+    // background-color: #d6b4b7;
+
+    &:before {
+      background-color: #ff79c6;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: #56545f;
+  }
 }
 
+// =============================================================================
+// CONFIG STYLES GENERAL
 * {
   padding: 0;
   margin: 0;
@@ -25,13 +89,6 @@
   font-family: "JetBrains Mono", monospace;
   ::-webkit-scrollbar {
     width: 14px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #ff79c6;
-    border-radius: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #56545f;
   }
 }
 
@@ -51,4 +108,49 @@ button {
 
 a {
   text-decoration: none;
+}
+
+// =============================================================================
+// SWITCH THEME MODE
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  margin-left: 0.8rem;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
