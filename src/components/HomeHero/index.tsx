@@ -14,8 +14,12 @@ export default function HomeHero() {
       </div>
       <div className={styles.info_container}>
         <section data-aos="fade-left">
-          <h1>Olá</h1>
-          <h3>Bem-vindo ao meu portfólio!</h3>
+          <h1>Olá,</h1>
+          <h3>
+            Me chamo <span>Neder Hayden</span>, <br />
+            sou um entusiasta na área de desenvolvimento web front-end e
+            apaixonado por desafios que me estimule intelectualmente!
+          </h3>
           <CodeItem />
         </section>
       </div>

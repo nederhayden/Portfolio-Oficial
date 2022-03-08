@@ -11,12 +11,12 @@
 
 [data-theme="dark"] {
   // primary
-  --color-primary-text: #00dbd8;
-  --color-secondary-text: #009c99;
-  --color-accent-text: #42dbd9;
+  --color-primary-text: #ff79c6;
+  --color-secondary-text: #ff79c6;
+  --color-accent-text: #fff;
 
   // background
-  --color-background: #023535;
+  --color-background: #13111b;
 
   // slider
   --color-slider-button: #004f4e;
@@ -35,7 +35,7 @@
     width: 14px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #00dbd8;
+    background-color: #ff79c6;
     border-radius: 8px;
   }
   ::-webkit-scrollbar-track {

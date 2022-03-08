@@ -16,31 +16,44 @@
     h1 {
       font-size: 8rem;
       color: var(--color-primary-text);
+      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-accent-text));
     }
 
     h3 {
-      font-size: 2rem;
-      color: var(--color-secondary-text);
+      font-size: 1.4rem;
+      color: #cecfe9;
+      font-family: "Montserrat", sans-serif;
+      text-align: justify;
+
+      span {
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8rem;
+        color: #ff79c6;
+      }
     }
   }
 }
 
 .container_code_item {
-  margin: 2rem 0;
-
   .comment {
     display: flex;
     margin-bottom: 1.2rem;
-    color: var(--color-secondary-text);
+    color: #494b78;
   }
 
   .code_item {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
+    background-color: #191622;
+
+    .keys_sign {
+      color: #44abfa;
+    }
 
     .title {
-      color: var(--color-accent-text);
+      color: #5de162;
     }
 
     .details {
@@ -50,7 +63,19 @@
       line-height: 1.6rem;
 
       span {
-        color: var(--color-secondary-text);
+        color: var(--color-accent-text);
+
+        .two_points {
+          color: #ff79c6;
+        }
+
+        .content_number {
+          color: #44abfa;
+        }
+
+        .content {
+          color: #e7ce4c;
+        }
       }
     }
   }

@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 export default function CodeItem() {
   const info = {
-    name: "Neder Hayden",
+    // name: "Neder Hayden",
     age: 30,
     city: "Manaus-AM",
     email: "nedersimoes@gmail.com",
@@ -13,24 +13,61 @@ export default function CodeItem() {
 
   return (
     <div className={styles.container_code_item}>
+      {/* CODEITEM */}
       <div className={styles.code_item} data-aos="zoom-in-up">
+        {/* COMMENT */}
         <span className={styles.comment}>{`// Minha Apresentação`}</span>
-        <span className={styles.title}>Info {"{"}</span>
+
+        {/* TITLE */}
+        <span className={styles.title}>
+          Informações <span className={styles.keys_sign}>{"{"}</span>
+        </span>
+
+        {/* DETAILS */}
         <div className={styles.details}>
-          <span>Name: {`"${info.name}"`},</span>
-          <span>Age: {info.age},</span>
-          <span>City: {info.city},</span>
-          <span>E-mail: {info.email}</span>
+          {/* AGE */}
+          <span>
+            Idade<span className={styles.two_points}>:</span>{" "}
+            <span className={styles.content_number}>{info.age}</span>,
+          </span>
+
+          {/* CITY */}
+          <span>
+            Cidade<span className={styles.two_points}>:</span>{" "}
+            <span className={styles.content}>{`"${info.city}"`}</span>,
+          </span>
+
+          {/* E-MAIL */}
+          <span>
+            E-mail<span className={styles.two_points}>:</span>{" "}
+            <span className={styles.content}>{`"${info.email}"`}</span>
+          </span>
         </div>
-        <span className={styles.title}>{"}"}</span>
+        <span className={styles.keys_sign}>{"}"}</span>
       </div>
+
+      {/* CODEITEM */}
       <div className={styles.code_item} data-aos="zoom-in-up">
-        <span className={styles.title}>Details {"{"}</span>
+        {/* TITLE */}
+        <span className={styles.title}>
+          Detalhes <span className={styles.keys_sign}>{"{"}</span>
+        </span>
+
+        {/* DETAILS */}
         <div className={styles.details}>
-          <span>Role: {`"${info.role}"`},</span>
-          <span>Seniority: {info.seniority},</span>
+          {/* ROLE */}
+          <span>
+            Função<span className={styles.two_points}>:</span>{" "}
+            <span className={styles.content}>{`"${info.role}"`}</span>,
+          </span>
+
+          {/* SENIORITY */}
+          <span>
+            Senioridade<span className={styles.two_points}>:</span>{" "}
+            <span className={styles.content}>{`"${info.seniority}"`}</span>
+          </span>
         </div>
-        <span className={styles.title}>{"}"}</span>
+        <span className={styles.keys_sign}>{"}"}</span>
       </div>
     </div>
   );

@@ -16,8 +16,12 @@
   margin-top: 6rem;
   cursor: pointer;
 
+  &:hover {
+    filter: drop-shadow(0 0 1rem var(--color-accent-text));
+  }
+
   p {
-    color: var(--color-secondary-text);
+    color: #988bc7;
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -32,6 +36,5 @@
 
   svg {
     font-size: 6rem;
-    // filter: drop-shadow(0 0 1rem #2e2e2e);
   }
 }
