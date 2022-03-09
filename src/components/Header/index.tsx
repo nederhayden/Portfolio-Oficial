@@ -51,9 +51,9 @@ export default function Header() {
         ))}
         <a
           className={styles.pdf}
-          href="../../data/curriculo.pdf"
+          href="../../../curriculo.pdf"
           target="_blank"
-          download
+          // download
         >
           Baixar Currículo
           <FiDownload />
