@@ -37,3 +37,20 @@
     font-size: 6rem;
   }
 }
+
+// RESPONSIVIDADE
+@media (max-width: 768px) {
+  .container {
+    section {
+      grid-template-columns: repeat(3, minmax(14rem, auto));
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    section {
+      grid-template-columns: repeat(1, minmax(14rem, auto));
+    }
+  }
+}

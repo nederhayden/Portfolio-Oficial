@@ -43,7 +43,9 @@ export default function Header() {
   return (
     <div className={colorBgHeader ? styles.container_active : styles.container}>
       <Link href="/">
-        <a id="/">{"<nederhayden/>"}</a>
+        <a className={styles.name} id="/">
+          {"<nederhayden/>"}
+        </a>
       </Link>
       <ul className={styles.header_links}>
         {urls.map((url, index) => (

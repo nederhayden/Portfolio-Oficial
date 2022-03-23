@@ -1,19 +1,5 @@
 // LIGHT THEME
 :root {
-  // analogo
-  // A - #F7E0D0
-  // B - #D6BDB4
-  // C - #EED7D4
-  // D - #D6B4B7
-  // E - #F7D0E7
-
-  // monocromatico
-  // A - #6E6362
-  // B - #F0998E
-  // C - #EED7D4
-  // D - #6E4641
-  // E - #BAA8A6
-
   // primary
   --color-primary-text: #6e4641;
   --color-secondary-text: #191622;
@@ -155,4 +141,12 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+//RESPONSIVIDADE
+@media (max-width: 768px) {
+  .switch,
+  .slider {
+    display: none;
+  }
 }
