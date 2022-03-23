@@ -11,7 +11,7 @@ interface IHeaderItemProps {
   link: string;
 }
 
-// redirecionamento de secao
+// section redirect
 export default function HeaderItem({ title, link }: IHeaderItemProps) {
   return (
     <div className={styles.header_item}>

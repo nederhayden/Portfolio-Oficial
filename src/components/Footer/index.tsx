@@ -9,7 +9,7 @@ export default function Footer() {
   const date = new Date();
   const currentYear = date.getFullYear();
 
-  // funcao para mover o scroll para o topo
+  // function to move the scroll to the top
   function handleScrollTop() {
     // window.scrollTo({
     //   top: 0,

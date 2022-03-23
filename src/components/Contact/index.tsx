@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 import ContactItem from "./ContactItem";
 
 export default function Contact() {
-  // funcao para abrir os links de contato
+  // function to open contact links
   function handleRedirect(url: string) {
     window.open(url);
   }
