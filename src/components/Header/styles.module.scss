@@ -155,4 +155,22 @@
       }
     }
   }
+
+  .container_active {
+    .header_links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-size: 1.6rem;
+        width: 20rem;
+      }
+
+      .header_item {
+        a {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
