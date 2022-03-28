@@ -44,19 +44,16 @@ export default function Header() {
     <div className={colorBgHeader ? styles.container_active : styles.container}>
       <Link href="/">
         <a className={styles.name} id="/">
-          {"<nederhayden/>"}
+          <span>{"<"}</span>
+          nederhayden
+          <span>{"/>"}</span>
         </a>
       </Link>
       <ul className={styles.header_links}>
         {urls.map((url, index) => (
           <HeaderItem key={index} title={url.title} link={url.link} />
         ))}
-        <a
-          className={styles.pdf}
-          href="../../../curriculo.pdf"
-          target="_blank"
-          // download
-        >
+        <a className={styles.pdf} href="../../../curriculo.pdf" target="_blank">
           Baixar Currículo
           <FiDownload />
         </a>

@@ -14,19 +14,19 @@
 
   // scrollbar
   ::-webkit-scrollbar-thumb {
-    background-color: #6e4641;
+    background-color: var(--color-primary-button);
     border-radius: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #d6b4b7;
+    background: var(--color-background-button);
   }
 
   // switch mode
   .slider {
-    background-color: #d6b4b7;
+    background-color: var(--color-background-button);
 
     &:before {
-      background-color: #6e4641;
+      background-color: var(--color-primary-button);
     }
   }
 }
@@ -47,24 +47,22 @@
 
   // scrollbar
   ::-webkit-scrollbar-thumb {
-    background-color: #ff79c6;
+    background-color: var(--color-primary-button);
     border-radius: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #56545f;
+    background: var(--color-background-button);
   }
 
   // switch mode
   .slider {
-    // background-color: #d6b4b7;
-
     &:before {
-      background-color: #ff79c6;
+      background-color: var(--color-primary-button);
     }
   }
 
   input:checked + .slider {
-    background-color: #56545f;
+    background-color: var(--color-background-button);
   }
 }
 

@@ -20,7 +20,7 @@ export default function Footer() {
 
   return (
     <div id="footer" className={styles.container}>
-      <span>Portfólio Oficial &copy; {currentYear} by Neder Hayden</span>
+      <span>Portfólio Oficial | Neder Hayden &copy; {currentYear} </span>
       <button onClick={handleScrollTop}>
         <BsFillArrowUpSquareFill />
       </button>

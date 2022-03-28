@@ -6,6 +6,11 @@
   .img_container {
     margin-right: 1.6rem;
     flex: 1;
+    filter: drop-shadow(-0.1rem 1rem 1rem var(--color-accent-text));
+
+    img {
+      border-radius: 10%;
+    }
   }
 
   .info_container {
@@ -16,7 +21,7 @@
     h1 {
       font-size: 8rem;
       color: var(--color-primary-text);
-      filter: drop-shadow(-0.2rem 0.4rem 0.4rem var(--color-accent-text));
+      filter: drop-shadow(-0.2rem 0.2rem 0.2rem var(--color-accent-text));
     }
 
     h3 {
