@@ -1,15 +1,26 @@
-// components
+// next
+import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
+
+// components
 import { useEffect, useState } from "react";
 import ThemeMode from "../ThemeMode";
 import HeaderItem from "./HeaderItem";
 import { FiDownload } from "react-icons/fi";
+import { en } from "../../languages/en/Strings";
+import { pt } from "../../languages/pt/Strings";
+import flagBrazil from "../../assets/brazil.png";
+import flagUSA from "../../assets/usa.png";
 
 // styles
 import styles from "./styles.module.scss";
 
 export default function Header() {
   const [colorBgHeader, setColorBgHeader] = useState(false);
+
+  const router = useRouter();
+  const translate = router.locale === "pt-BR" ? pt : en;
 
   function handleScroll() {
     const offset = window.scrollY;
@@ -27,16 +38,16 @@ export default function Header() {
 
   const urls = [
     {
-      title: "Sobre",
-      link: "#homehero",
+      title: `${translate.header__about}`,
+      link: "#about",
     },
     {
-      title: "Experiências",
-      link: "#knowledge",
+      title: `${translate.header__acquirements}`,
+      link: "#acquirements",
     },
     {
-      title: "Contato",
-      link: "#footer",
+      title: `${translate.header__contact}`,
+      link: "#contact",
     },
   ];
 
@@ -54,10 +65,16 @@ export default function Header() {
           <HeaderItem key={index} title={url.title} link={url.link} />
         ))}
         <a className={styles.pdf} href="../../../curriculo.pdf" target="_blank">
-          Baixar Currículo
+          {translate.header__pdfResume}
           <FiDownload />
         </a>
         <ThemeMode />
+        <Link href="/" locale="pt-BR" passHref>
+          <Image src={flagBrazil} alt="flagBrazil" />
+        </Link>
+        <Link href="/" locale="en-US" passHref>
+          <Image src={flagUSA} alt="flagUSA" />
+        </Link>
       </ul>
     </div>
   );

@@ -1,14 +1,24 @@
+// next
+import { useRouter } from "next/router";
+
+// components
+import { en } from "../../languages/en/Strings";
+import { pt } from "../../languages/pt/Strings";
+
 // styles
 import styles from "./styles.module.scss";
 
 export default function CodeItem() {
+  const router = useRouter();
+  const translate = router.locale === "pt-BR" ? pt : en;
+
   const info = {
     // name: "Neder Hayden",
     age: 30,
     city: "Manaus-AM",
     email: "nedersimoes@gmail.com",
-    role: "Desenvolvedor Front-End",
-    seniority: "Júnior",
+    role: `${translate.code__roleDescription}`,
+    seniority: `${translate.code__seniorityDescription}`,
   };
 
   return (
@@ -16,24 +26,29 @@ export default function CodeItem() {
       {/* CODEITEM */}
       <div className={styles.code_item} data-aos="zoom-in-up">
         {/* COMMENT */}
-        <span className={styles.comment}>{`// Minha Apresentação`}</span>
+        <span
+          className={styles.comment}
+        >{`// ${translate.code__comment}`}</span>
 
         {/* TITLE */}
         <span className={styles.title}>
-          Informações <span className={styles.keys_sign}>{"{"}</span>
+          {translate.code__title1}{" "}
+          <span className={styles.keys_sign}>{"{"}</span>
         </span>
 
         {/* DETAILS */}
         <div className={styles.details}>
           {/* AGE */}
           <span>
-            Idade<span className={styles.two_points}>:</span>{" "}
+            {translate.code__age}
+            <span className={styles.two_points}>:</span>{" "}
             <span className={styles.content_number}>{info.age}</span>,
           </span>
 
           {/* CITY */}
           <span>
-            Cidade<span className={styles.two_points}>:</span>{" "}
+            {translate.code__city}
+            <span className={styles.two_points}>:</span>{" "}
             <span className={styles.content}>{`"${info.city}"`}</span>,
           </span>
 
@@ -50,20 +65,23 @@ export default function CodeItem() {
       <div className={styles.code_item} data-aos="zoom-in-up">
         {/* TITLE */}
         <span className={styles.title}>
-          Detalhes <span className={styles.keys_sign}>{"{"}</span>
+          {translate.code__title2}{" "}
+          <span className={styles.keys_sign}>{"{"}</span>
         </span>
 
         {/* DETAILS */}
         <div className={styles.details}>
           {/* ROLE */}
           <span>
-            Função<span className={styles.two_points}>:</span>{" "}
+            {translate.code__role}
+            <span className={styles.two_points}>:</span>{" "}
             <span className={styles.content}>{`"${info.role}"`}</span>,
           </span>
 
           {/* SENIORITY */}
           <span>
-            Senioridade<span className={styles.two_points}>:</span>{" "}
+            {translate.code__seniority}
+            <span className={styles.two_points}>:</span>{" "}
             <span className={styles.content}>{`"${info.seniority}"`}</span>
           </span>
         </div>

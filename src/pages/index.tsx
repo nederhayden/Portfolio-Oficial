@@ -8,7 +8,7 @@ import type { NextPage } from "next";
 import AOS from "aos";
 import Header from "../components/Header";
 import HomeHero from "../components/HomeHero";
-import Knowledge from "../components/Knowledge";
+import Acquirement from "../components/Acquirements";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <Header />
       <main className={styles.main}>
         <HomeHero />
-        <Knowledge />
+        <Acquirement />
         <Contact />
       </main>
       <Footer />

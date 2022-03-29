@@ -5,17 +5,17 @@ import { ReactNode } from "react";
 import styles from "./styles.module.scss";
 
 // interfaces
-interface KnowledgeItemProps {
+interface AcquirementItemProps {
   title: string;
   icon: ReactNode;
   onClick: React.MouseEventHandler<HTMLParagraphElement>;
 }
 
-export default function KnowledgeItem({
+export default function AcquirementItem({
   title,
   icon,
   onClick,
-}: KnowledgeItemProps) {
+}: AcquirementItemProps) {
   return (
     <div
       className={styles.container_item}

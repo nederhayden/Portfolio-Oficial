@@ -1,6 +1,5 @@
 // react
 import { useEffect, useState } from "react";
-import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 export default function ThemeMode() {
   const [darkTheme, setDarkTheme] = useState<any>(undefined);
@@ -38,9 +37,7 @@ export default function ThemeMode() {
       {darkTheme !== undefined && (
         <label className="switch">
           <input type="checkbox" checked={darkTheme} onChange={handleToggle} />
-          <span className="slider">
-            {/* {darkTheme === true ? <MdDarkMode /> : <MdOutlineLightMode />} */}
-          </span>
+          <span className="slider" />
         </label>
       )}
     </>

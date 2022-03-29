@@ -1,4 +1,10 @@
+// next
+import { useRouter } from "next/router";
+
 // components
+import { en } from "../../languages/en/Strings";
+import { pt } from "../../languages/pt/Strings";
+
 // import { Router } from "next/router";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 
@@ -6,6 +12,9 @@ import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import styles from "./styles.module.scss";
 
 export default function Footer() {
+  const router = useRouter();
+  const translate = router.locale === "pt-BR" ? pt : en;
+
   const date = new Date();
   const currentYear = date.getFullYear();
 
@@ -20,7 +29,9 @@ export default function Footer() {
 
   return (
     <div id="footer" className={styles.container}>
-      <span>Portfólio Oficial | Neder Hayden &copy; {currentYear} </span>
+      <span>
+        {translate.footer__span} | Neder Hayden &copy; {currentYear}{" "}
+      </span>
       <button onClick={handleScrollTop}>
         <BsFillArrowUpSquareFill />
       </button>
