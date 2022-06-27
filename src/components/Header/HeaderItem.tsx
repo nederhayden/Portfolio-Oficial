@@ -15,7 +15,7 @@ interface IHeaderItemProps {
 export default function HeaderItem({ title, link }: IHeaderItemProps) {
   return (
     <div className={styles.header_item}>
-      <Anchor affix={false} targetOffset={73}>
+      <Anchor affix={false} targetOffset={90}>
         <Link href={link} title={title} />
       </Anchor>
     </div>
