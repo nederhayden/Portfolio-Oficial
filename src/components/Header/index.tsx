@@ -22,6 +22,8 @@ export default function Header() {
   const router = useRouter();
   const translate = router.locale === "pt-BR" ? pt : en;
 
+  const sizeImg = 32;
+
   function handleScroll() {
     const offset = window.scrollY;
     if (offset >= 73) {
@@ -64,17 +66,34 @@ export default function Header() {
         {urls.map((url, index) => (
           <HeaderItem key={index} title={url.title} link={url.link} />
         ))}
-        <a className={styles.pdf} href="../../../curriculo.pdf" target="_blank">
-          {translate.header__pdfResume}
-          <FiDownload />
-        </a>
-        <ThemeMode />
-        <Link href="/" locale="pt-BR" passHref>
-          <Image src={flagBrazil} alt="flagBrazil" />
-        </Link>
-        <Link href="/" locale="en-US" passHref>
-          <Image src={flagUSA} alt="flagUSA" />
-        </Link>
+
+        <div className={styles.btns}>
+          <a
+            className={styles.pdf}
+            href="../../../curriculo.pdf"
+            target="_blank"
+          >
+            {translate.header__pdfResume}
+            <FiDownload />
+          </a>
+          <Link href="/" locale="pt-BR" passHref>
+            <Image
+              src={flagBrazil}
+              alt="flagBrazil"
+              width={sizeImg}
+              height={sizeImg}
+            />
+          </Link>
+          <Link href="/" locale="en-US" passHref>
+            <Image
+              src={flagUSA}
+              alt="flagUSA"
+              width={sizeImg}
+              height={sizeImg}
+            />
+          </Link>
+          <ThemeMode />
+        </div>
       </ul>
     </div>
   );
