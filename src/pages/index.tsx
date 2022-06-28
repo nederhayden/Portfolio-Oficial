@@ -26,8 +26,8 @@ const Home: NextPage = () => {
       <Header />
       <main className={styles.main}>
         <HomeHero />
-        <Acquirement />
-        <Contact />
+        {/* <Acquirement /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </>

@@ -4,6 +4,8 @@ import { useRouter } from "next/router";
 // components
 import { en } from "../../languages/en/Strings";
 import { pt } from "../../languages/pt/Strings";
+import Acquirement from "../Acquirements";
+import Contact from "../Contact";
 
 // styles
 import styles from "./styles.module.scss";
@@ -22,71 +24,74 @@ export default function CodeItem() {
   };
 
   return (
-    <div className={styles.container_code_item}>
-      {/* CODEITEM */}
-      <div className={styles.code_item} data-aos="zoom-in-up">
-        {/* COMMENT */}
-        <span
-          className={styles.comment}
-        >{`// ${translate.code__comment}`}</span>
+    <div className={styles.wrapper}>
+      <div className={styles.container_code_item}>
+        {/* CODEITEM */}
+        <div className={styles.code_item} data-aos="zoom-in-up">
+          {/* COMMENT */}
+          <span
+            className={styles.comment}
+          >{`// ${translate.code__comment}`}</span>
 
-        {/* TITLE */}
-        <span className={styles.title}>
-          {translate.code__title1}{" "}
-          <span className={styles.keys_sign}>{"{"}</span>
-        </span>
-
-        {/* DETAILS */}
-        <div className={styles.details}>
-          {/* AGE */}
-          <span>
-            {translate.code__age}
-            <span className={styles.two_points}>:</span>{" "}
-            <span className={styles.content_number}>{info.age}</span>,
+          {/* TITLE */}
+          <span className={styles.title}>
+            {translate.code__title1}{" "}
+            <span className={styles.keys_sign}>{"{"}</span>
           </span>
 
-          {/* CITY */}
-          <span>
-            {translate.code__city}
-            <span className={styles.two_points}>:</span>{" "}
-            <span className={styles.content}>{`"${info.city}"`}</span>,
-          </span>
+          {/* DETAILS */}
+          <div className={styles.details}>
+            {/* AGE */}
+            <span>
+              {translate.code__age}
+              <span className={styles.two_points}>:</span>{" "}
+              <span className={styles.content_number}>{info.age}</span>,
+            </span>
 
-          {/* E-MAIL */}
-          <span>
-            E-mail<span className={styles.two_points}>:</span>{" "}
-            <span className={styles.content}>{`"${info.email}"`}</span>
-          </span>
+            {/* CITY */}
+            <span>
+              {translate.code__city}
+              <span className={styles.two_points}>:</span>{" "}
+              <span className={styles.content}>{`"${info.city}"`}</span>,
+            </span>
+
+            {/* E-MAIL */}
+            <span>
+              E-mail<span className={styles.two_points}>:</span>{" "}
+              <span className={styles.content}>{`"${info.email}"`}</span>
+            </span>
+          </div>
+          <span className={styles.keys_sign}>{"}"}</span>
         </div>
-        <span className={styles.keys_sign}>{"}"}</span>
-      </div>
 
-      {/* CODEITEM */}
-      <div className={styles.code_item} data-aos="zoom-in-up">
-        {/* TITLE */}
-        <span className={styles.title}>
-          {translate.code__title2}{" "}
-          <span className={styles.keys_sign}>{"{"}</span>
-        </span>
-
-        {/* DETAILS */}
-        <div className={styles.details}>
-          {/* ROLE */}
-          <span>
-            {translate.code__role}
-            <span className={styles.two_points}>:</span>{" "}
-            <span className={styles.content}>{`"${info.role}"`}</span>,
+        {/* CODEITEM */}
+        <div className={styles.code_item} data-aos="zoom-in-up">
+          {/* TITLE */}
+          <span className={styles.title}>
+            {translate.code__title2}{" "}
+            <span className={styles.keys_sign}>{"{"}</span>
           </span>
 
-          {/* SENIORITY */}
-          <span>
-            {translate.code__seniority}
-            <span className={styles.two_points}>:</span>{" "}
-            <span className={styles.content}>{`"${info.seniority}"`}</span>
-          </span>
+          {/* DETAILS */}
+          <div className={styles.details}>
+            {/* ROLE */}
+            <span>
+              {translate.code__role}
+              <span className={styles.two_points}>:</span>{" "}
+              <span className={styles.content}>{`"${info.role}"`}</span>,
+            </span>
+
+            {/* SENIORITY */}
+            <span>
+              {translate.code__seniority}
+              <span className={styles.two_points}>:</span>{" "}
+              <span className={styles.content}>{`"${info.seniority}"`}</span>
+            </span>
+          </div>
+          <span className={styles.keys_sign}>{"}"}</span>
         </div>
-        <span className={styles.keys_sign}>{"}"}</span>
       </div>
+      <Acquirement />
     </div>
   );
 }

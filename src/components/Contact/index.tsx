@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 
 // components
 import { SiLinkedin, SiGithub } from "react-icons/si";
+import { VscGithub } from "react-icons/vsc";
+import { FiLinkedin } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import SectionTitle from "../SectionTitle";
 import { en } from "../../languages/en/Strings";
@@ -23,25 +25,28 @@ export default function Contact() {
 
   return (
     <div id="contact" className={styles.container}>
-      <SectionTitle title={translate.contact__title} />
+      {/* <SectionTitle title={translate.contact__title} /> */}
       <section>
         <ContactItem
           title="Linkedin"
-          icon={<SiLinkedin style={{ color: "#0A66C2" }} />}
+          // icon={<SiLinkedin style={{ color: "#0A66C2" }} />}
+          icon={<FiLinkedin style={{ color: "#ffffff" }} />}
           onClick={() =>
             handleRedirect("https://www.linkedin.com/in/neder-hayden/")
           }
         />
         <ContactItem
           title="Whatsapp"
-          icon={<BsWhatsapp style={{ color: "#45C655" }} />}
+          // icon={<BsWhatsapp style={{ color: "#45C655" }} />}
+          icon={<BsWhatsapp style={{ color: "#ffffff" }} />}
           onClick={() =>
-            handleRedirect("https://api.whatsapp.com/send?phone=+5592984451006")
+            handleRedirect("https://api.whatsapp.com/send?phone=5592984451006")
           }
         />
         <ContactItem
           title="Github"
-          icon={<SiGithub style={{ color: "#000000" }} />}
+          // icon={<SiGithub style={{ color: "#000000" }} />}
+          icon={<SiGithub style={{ color: "#ffffff" }} />}
           onClick={() => handleRedirect("https://github.com/nederhayden")}
         />
       </section>

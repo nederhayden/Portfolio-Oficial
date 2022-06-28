@@ -8,7 +8,7 @@ export const en = {
 
   // ============== HOMEHERO ===================================================
   // ABOUT
-  about__h1: "Hi",
+  about__span: "Hi",
   about__h3a: "My name is",
   about__h3b:
     "I'm an enthusiast in front-end web development and passionate about challenges that stimulate me intellectually!",
@@ -35,5 +35,6 @@ export const en = {
 
   // ============== FOOTER =====================================================
   footer__span: "Official Portfolio",
+  footer__tech: "Developed with",
   // ===========================================================================
 };

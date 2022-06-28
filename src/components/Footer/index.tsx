@@ -30,11 +30,13 @@ export default function Footer() {
   return (
     <div id="footer" className={styles.container}>
       <span>
-        {translate.footer__span} | Neder Hayden &copy; {currentYear}{" "}
+        {`<${translate.footer__span}`} | {`${translate.footer__tech}`} NextJs -
+        Typescript | Neder Hayden &copy; {`${currentYear}/>`}
+        {/* {translate.footer__span} | Neder Hayden &copy; {currentYear} */}
       </span>
-      <button onClick={handleScrollTop}>
+      {/* <button onClick={handleScrollTop}>
         <BsFillArrowUpSquareFill />
-      </button>
+      </button> */}
     </div>
   );
 }
