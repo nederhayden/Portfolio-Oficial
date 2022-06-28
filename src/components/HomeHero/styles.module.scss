@@ -33,20 +33,18 @@
     flex: 1;
 
     h1 {
-      font-size: 8rem;
+      font-size: 4rem;
       color: var(--color-primary-text);
-      filter: drop-shadow(-0.2rem 0.2rem 0.2rem var(--color-accent-text));
+      // filter: drop-shadow(-0.2rem 0.2rem 0.2rem var(--color-accent-text));
     }
 
     h3 {
       font-size: 1.4rem;
       color: var(--color-secondary-text);
-      font-family: "Montserrat", sans-serif;
       text-align: justify;
 
       span {
         text-transform: uppercase;
-        font-family: "Roboto", sans-serif;
         font-size: 1.8rem;
         color: var(--color-primary-text);
       }
