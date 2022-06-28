@@ -63,9 +63,9 @@ export default function Header() {
         </a>
       </Link>
       <ul className={styles.header_links}>
-        {urls.map((url, index) => (
+        {/* {urls.map((url, index) => (
           <HeaderItem key={index} title={url.title} link={url.link} />
-        ))}
+        ))} */}
 
         <div className={styles.btns}>
           <a

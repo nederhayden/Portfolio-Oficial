@@ -30,7 +30,7 @@ export default function Acquirement() {
 
   return (
     <div id="acquirements" className={styles.container}>
-      <SectionTitle title={translate.acquirement__title} />
+      {/* <SectionTitle title={translate.acquirement__title} /> */}
       <section>
         <AcquirementItem
           title="HTML"

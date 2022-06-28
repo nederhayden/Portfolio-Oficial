@@ -1,9 +1,10 @@
 .container {
-  margin: 6rem 0;
+  // margin: 6rem 0;
 
   section {
     display: grid;
-    grid-template-columns: repeat(4, minmax(14rem, auto));
+    // grid-template-columns: repeat(4, minmax(14rem, auto));
+    grid-template-columns: repeat(4, minmax(8rem, auto));
     justify-content: center;
     // gap: 4rem;
   }
@@ -13,7 +14,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6rem;
+  // margin-top: 6rem;
+  margin-top: 4rem;
   cursor: pointer;
 
   &:hover {
@@ -23,7 +25,8 @@
   p {
     // color: #988bc7;
     color: var(--color-secondary-text);
-    font-size: 1rem;
+    // font-size: 1rem;
+    font-size: .6rem;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.4rem;
@@ -36,23 +39,24 @@
   }
 
   svg {
-    font-size: 6rem;
+    // font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
 // RESPONSIVIDADE
-@media (max-width: 768px) {
-  .container {
-    section {
-      grid-template-columns: repeat(3, minmax(14rem, auto));
-    }
-  }
-}
+// @media (max-width: 768px) {
+//   .container {
+//     section {
+//       grid-template-columns: repeat(3, minmax(14rem, auto));
+//     }
+//   }
+// }
 
-@media (max-width: 425px) {
-  .container {
-    section {
-      grid-template-columns: repeat(2, minmax(14rem, auto));
-    }
-  }
-}
+// @media (max-width: 425px) {
+//   .container {
+//     section {
+//       grid-template-columns: repeat(2, minmax(14rem, auto));
+//     }
+//   }
+// }

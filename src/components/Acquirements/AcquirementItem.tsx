@@ -22,7 +22,7 @@ export default function AcquirementItem({
       data-aos="zoom-in-up"
       onClick={onClick}
     >
-      <p>{title}</p>
+      {/* <p>{title}</p> */}
       {icon}
     </div>
   );

@@ -4,11 +4,12 @@
   justify-content: center;
   height: 2.8rem;
   background-color: var(--color-background-header-footer);
-  border-top: 0.3rem solid var(--color-accent-button);
+  // border-top: 0.3rem solid var(--color-accent-button);
+  border-top: 0.3rem solid var(--color-primary-text);
 
   span {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--color-primary-text);
+    // color: var(--color-primary-text);
+    color: var(--color-secondary-text);
   }
 
   button {

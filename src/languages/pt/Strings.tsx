@@ -9,7 +9,7 @@ export const pt = {
 
   // ============== HOMEHERO ===================================================
   // ABOUT
-  about__h1: "Olá",
+  about__span: "Olá Mundo!",
   about__h3a: "Me chamo",
   about__h3b:
     "sou um entusiasta na área de desenvolvimento web front-end e apaixonado por desafios que me estimulem intelectualmente!",
@@ -36,5 +36,6 @@ export const pt = {
 
   // ============== FOOTER =====================================================
   footer__span: "Portfólio Oficial",
+  footer__tech: "Desenvolvido com",
   // ===========================================================================
 };
