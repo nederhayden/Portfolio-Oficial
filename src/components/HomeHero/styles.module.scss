@@ -208,5 +208,30 @@
 @media (max-width: 425px) {
   .container {
     margin-top: 12rem;
+
+    .img_container {
+      position: relative;
+      left: 1rem;
+    }
+
+    .info_container {
+      h1 {
+        font-size: 4rem;
+      }
+  
+      h3 {
+        font-size: 1.3rem;
+  
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .container_code_item {
+      span {
+        font-size: 1rem;
+      }
+    }
   }
 }
