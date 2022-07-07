@@ -6,7 +6,6 @@
   .img_container {
     margin-right: 1.6rem;
     flex: 1;
-    // filter: drop-shadow(-0.1rem 0.4rem 0.4rem var(--color-accent-text));
 
     img {
       border-radius: 10%;
@@ -35,18 +34,16 @@
     h1 {
       font-size: 8rem;
       color: var(--color-primary-text);
-      filter: drop-shadow(-0.2rem 0.2rem 0.2rem var(--color-accent-text));
+      filter: drop-shadow(-0.2rem 0.2rem 0.15rem var(--color-accent-text));
     }
 
     h3 {
       font-size: 1.4rem;
       color: var(--color-secondary-text);
-      // font-family: "Montserrat", sans-serif;
       text-align: justify;
 
       span {
         text-transform: uppercase;
-        // font-family: "Roboto", sans-serif;
         font-size: 1.8rem;
         color: var(--color-primary-text);
       }

@@ -22,9 +22,9 @@
     cursor: pointer;
 
     &:hover {
-      color: var(--color-accent-text);
+      color: var(--color-secondary-text);
       transition: 0.6s;
-      filter: drop-shadow(0 0 0.4rem var(--color-accent-text));
+      filter: drop-shadow(0 0 0.4rem var(--color-secondary-text));
     }
   }
 
@@ -34,7 +34,7 @@
     &:hover {
       color: var(--color-accent-text);
       transition: 0.6s;
-      filter: drop-shadow(0 0 0.15rem var(--color-accent-text));
+      filter: drop-shadow(0 0 0.15rem var(--color-secondary-text));
     }
   }
 }
@@ -51,6 +51,12 @@
   background-color: var(--color-background-header-footer);
   z-index: 1;
   border-bottom: 0.3rem solid var(--color-accent-button);
+
+  .name {
+    span {
+      color: var(--color-primary-text);
+    }
+  }
 
   a {
     color: var(--color-secondary-text);

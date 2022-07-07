@@ -16,7 +16,7 @@
   cursor: pointer;
 
   &:hover {
-    filter: drop-shadow(0 0 0.25rem var(--color-accent-text));
+    filter: drop-shadow(0 0 0.15rem var(--color-secondary-text));
   }
 
   p {

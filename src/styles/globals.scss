@@ -1,16 +1,18 @@
 // LIGHT THEME
 :root {
   // primary
-  --color-primary-text: #011640;
-  --color-secondary-text: #274360;
+  --color-primary-text: #127EA5;
+  --color-secondary-text: #10535E;
   --color-accent-text: #000;
-  --color-primary-button: #274360;
-  --color-accent-button: #274360;
+  --color-primary-button: #127EA5;
+  --color-accent-button: #127EA5;
+
+  // #011640
 
   // background
   --color-background: #EBEEF2;
   --color-background-button: #c5cbd1;
-  --color-background-header-footer: #c5cbd1;
+  --color-background-header-footer: #e1e7ed;
 
   // scrollbar
   ::-webkit-scrollbar-thumb {
@@ -34,9 +36,9 @@
 // DARK THEME
 [data-theme="dark"] {
   // primary
-  --color-primary-text: #ff79c6;
+  --color-primary-text: #f748ab;
   --color-secondary-text: #fff;
-  --color-accent-text: #fff;
+  --color-accent-text: #56545f;
   --color-primary-button: #f748ab;
   --color-accent-button: #f748ab;
 
