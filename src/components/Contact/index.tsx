@@ -36,7 +36,7 @@ export default function Contact() {
           title="Whatsapp"
           icon={<BsWhatsapp style={{ color: "#45C655" }} />}
           onClick={() =>
-            handleRedirect("https://api.whatsapp.com/send?phone=+5592984451006")
+            handleRedirect("https://api.whatsapp.com/send?phone=5592984451006")
           }
         />
         <ContactItem
