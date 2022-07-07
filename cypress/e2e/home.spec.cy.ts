@@ -9,7 +9,6 @@ describe("Tests in my home page", () => {
     cy.contains("Conhecimentos").click();
     cy.contains("Contato").click();
     // cy.contains("Baixar Currículo").click();
-    cy.contains("nederhayden").click();
   });
 
   it("Visit page EN-US", () => {
@@ -18,6 +17,11 @@ describe("Tests in my home page", () => {
     cy.contains("Acquirements").click();
     cy.contains("Contact").click();
     // cy.contains("Baixar Currículo").click();
-    cy.contains("nederhayden").click();
+  });
+
+  it("Testing redirection to contacts", () => {
+    // cy.contains("Linkedin").click();
+    // cy.contains("Whatsapp").click();
+    // cy.contains("Github").click();
   });
 });
