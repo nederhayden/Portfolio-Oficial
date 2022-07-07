@@ -1,6 +1,4 @@
 .container {
-  margin: 6rem 0;
-
   section {
     display: grid;
     grid-template-columns: repeat(4, minmax(14rem, auto));
@@ -47,12 +45,24 @@
       grid-template-columns: repeat(3, minmax(14rem, auto));
     }
   }
+
+  .container_item {
+    svg {
+      font-size: 6rem;
+    }
+  }
 }
 
 @media (max-width: 425px) {
   .container {
     section {
       grid-template-columns: repeat(2, minmax(14rem, auto));
+    }
+  }
+
+  .container_item {
+    svg {
+      font-size: 4rem;
     }
   }
 }
