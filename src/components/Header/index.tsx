@@ -76,22 +76,26 @@ export default function Header() {
             {translate.header__pdfResume}
             <FiDownload />
           </a>
-          <Link href="/" locale="pt-BR" passHref>
-            <Image
-              src={flagBrazil}
-              alt="flagBrazil"
-              width={sizeImg}
-              height={sizeImg}
-            />
-          </Link>
-          <Link href="/" locale="en-US" passHref>
-            <Image
-              src={flagUSA}
-              alt="flagUSA"
-              width={sizeImg}
-              height={sizeImg}
-            />
-          </Link>
+          <div className={styles.internationalization}>
+            <Link href="/" locale="pt-BR" passHref>
+              <Image
+                className="flagBrazil"
+                src={flagBrazil}
+                alt="flagBrazil"
+                width={sizeImg}
+                height={sizeImg}
+              />
+            </Link>
+            <Link href="/" locale="en-US" passHref>
+              <Image
+                className="flagUSA"
+                src={flagUSA}
+                alt="flagUSA"
+                width={sizeImg}
+                height={sizeImg}
+              />
+            </Link>
+          </div>
           <ThemeMode />
         </div>
       </ul>

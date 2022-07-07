@@ -129,6 +129,10 @@
 
   .container_active {
     padding: 0 6rem;
+
+    a {
+      font-size: 0.8rem;
+    }
   }
 
   .header_links {
@@ -152,7 +156,7 @@
     .header_links {
       a {
         font-size: 1.1rem;
-        padding: 0 1rem;
+        width: 18rem;
       }
     }
   }
@@ -168,10 +172,14 @@
 
     .header_links {
       a {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 1.1rem;
+        width: 18rem;
       }
     }
+  }
+
+  .internationalization {
+    display: flex;
   }
 }
 
@@ -189,6 +197,7 @@
       .header_item {
         a {
           font-size: 1.6rem;
+          border: none;
         }
       }
     }
@@ -207,8 +216,24 @@
       .header_item {
         a {
           font-size: 1.6rem;
+          border: none;
         }
       }
     }
   }
+
+  .btns {
+    display: flex;
+    flex-direction: column;
+
+    .pdf {
+      display: flex;
+      justify-content: center;
+    }
+
+    .internationalization {
+      display: none;
+    }
+  }
 }
+
