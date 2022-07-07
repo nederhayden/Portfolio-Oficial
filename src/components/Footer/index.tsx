@@ -29,7 +29,7 @@ export default function Footer() {
 
   return (
     <div id="footer" className={styles.container}>
-      <span>
+      <span className={styles.footer}>
         {`<${translate.footer__span}`} | {`${translate.footer__tech}`} NextJs -
         Typescript | Neder Hayden &copy; {`${currentYear}/>`}
       </span>
